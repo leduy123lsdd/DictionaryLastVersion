@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="guava-22.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/Dictionary/libraries/guava-22.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Dictionary/libraries/marytts-builder-5.2-jar-with-dependencies.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Dictionary/libraries/marytts-lang-en-5.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Dictionary/libraries/voice-cmu-rms-hsmm-5.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Dictionary/libraries/voice-cmu-slt-hsmm-5.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Dictionary/libraries/voice-dfki-poppy-hsmm-5.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
