@@ -123,11 +123,12 @@ public class Controller implements Initializable {
             @Override
             public void invalidated(Observable observable) {
                 searchContent();
+                test.loadWord();
+                TextFields.bindAutoCompletion(textField,test.worldKey);
 
             }
         });
-        test.loadWord();
-        TextFields.bindAutoCompletion(textField,test.worldKey);
+        
 
     }
 
