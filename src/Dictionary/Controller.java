@@ -120,17 +120,15 @@ public class Controller implements Initializable {
             event.consume();
         });
         Speaker.setImage(new Image("Dictionary/icons8-speaker-50.png"));
-        test.loadWord();
+
         textField.textProperty().addListener(new InvalidationListener() {
             @Override
             public void invalidated(Observable observable) {
                 searchContent();
             }
         });
-
-        TextFields.bindAutoCompletion(textField,test.worldKey);
-
-
+        //test.loadWord();
+        //TextFields.bindAutoCompletion(textField,test.worldKey);
     }
 
 }
