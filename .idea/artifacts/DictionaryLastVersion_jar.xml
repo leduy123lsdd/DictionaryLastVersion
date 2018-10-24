@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="DictionaryLastVersion:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/DictionaryLastVersion_jar</output-path>
+    <root id="archive" name="DictionaryLastVersion.jar">
+      <element id="module-output" name="DictionaryLastVersion" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libraries/guava-22.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libraries/marytts-builder-5.2-jar-with-dependencies.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libraries/marytts-lang-en-5.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libraries/voice-cmu-rms-hsmm-5.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libraries/voice-cmu-slt-hsmm-5.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libraries/voice-dfki-poppy-hsmm-5.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libraries/controlsfx-9.0.0.jar" path-in-jar="/" />
+      <element id="library" level="project" name="guava-22.0" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libraries/javafx-autocomplete-field-1.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
