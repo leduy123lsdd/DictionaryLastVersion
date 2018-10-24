@@ -31,6 +31,7 @@ public class Controller implements Initializable {
      */
     public Controller(){
         System.out.println("runing");
+        //test.loadWord();
     }
 
     /**
@@ -104,6 +105,7 @@ public class Controller implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+
         System.out.println("initialized");
         if(cbEtoV.isSelected()) {
             test = new TranslateEV(filePathEtoV,dataPathEtoV);
@@ -118,17 +120,16 @@ public class Controller implements Initializable {
             event.consume();
         });
         Speaker.setImage(new Image("Dictionary/icons8-speaker-50.png"));
-
+        test.loadWord();
         textField.textProperty().addListener(new InvalidationListener() {
             @Override
             public void invalidated(Observable observable) {
                 searchContent();
-                test.loadWord();
-                TextFields.bindAutoCompletion(textField,test.worldKey);
-
             }
         });
-        
+
+        TextFields.bindAutoCompletion(textField,test.worldKey);
+
 
     }
 
