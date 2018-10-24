@@ -70,6 +70,9 @@ public class TranslateEV {
     /**
      * lay nghia cua tu can tim "keySearch"
      */
+
+    private List<String> l;
+
     public void englishToVietnameseOn(String keySearch) {
         if(map.get(keySearch) != null) {
             this.founded = true;
