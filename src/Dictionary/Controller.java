@@ -15,6 +15,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import org.controlsfx.control.textfield.TextFields;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -125,6 +126,8 @@ public class Controller implements Initializable {
 
             }
         });
+        test.loadWord();
+        TextFields.bindAutoCompletion(textField,test.worldKey);
 
     }
 

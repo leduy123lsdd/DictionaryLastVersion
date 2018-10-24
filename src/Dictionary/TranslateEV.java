@@ -113,9 +113,9 @@ public class TranslateEV {
 
     public String[] worldKey;
 
-    public void loadWord(String keySearch) {
+    public void loadWord() {
         //worldKey = new String[20];
-        String[] wordS = new String[20];
+        String[] wordS = new String[110000];
         int index = 0;
         try {
             BufferedReader reader = new BufferedReader(new FileReader(filePath));
@@ -127,47 +127,12 @@ public class TranslateEV {
                 // count amount of word
                 int amount = countWorldInIndexFile(line);
                 String[] parts = line.split("\\W", amount);
-/*
-                for (int i = 0; i < amount - 2; i++) {
-                    key = key + " " + parts[i];
-                }*/
-/*
-                key = parts[0];
-                key = key.trim();
 
-                String test = "";
-                for(int i = 0;i < keySearch.length();i++) {
-                    if(key.length() >= keySearch.length()) {
-                        test = test + key.charAt(i);
-                    }
-                }
-
-                Boolean Same = true;
-                for(int k = 0; k < keySearch.length();k++) {
-                    if(keySearch.charAt(k) != test.charAt(k)) {
-                        Same = false;
-                        break;
-                    }
-                }
-
-                if(Same && key.length() >= keySearch.length()) {
-                    wordS[index] = key;
-                    index++;
-                }*/
-
-
-
-                if(index > 19) {
-                    break;
-                }
+                wordS[index] = parts[0];
+                index++;
             }
+            index--;
 
-            for(int i = 0;i < wordS.length;i++) {
-                if(wordS[i].equals(new String())) {
-                    wordS[i] = "";
-                }
-                System.out.println(wordS[i]);
-            }
             this.worldKey = wordS;
             reader.close();
         }
